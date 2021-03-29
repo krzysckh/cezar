@@ -36,6 +36,8 @@ run the program with command ```lua cezar.lua args word```
 
 e.g. ```lua cezar.lua -n 3 gaming```
 
+and to decrypt ```lua cezar.lua -n 3 -d dxjfkd```
+
 
 
 ## known bugs
