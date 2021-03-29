@@ -25,6 +25,10 @@ function getArgs()
 			]])
 			os.exit()
 		elseif arg[i] == "-n" then
+			if arg[i+1] == nil then
+				print("value for -n can't be nil")
+				os.exit()
+			end
 			if tonumber(arg[i+1]) < 12 and tonumber(arg[i+1]) > 0 then
 				howManyLetters = tonumber(arg[i+1])
 				i = i + 1
