@@ -1,6 +1,8 @@
 # cezar
 ceasar cipher written in lua
 
+[![shields](https://img.shields.io/badge/actually-works-brightgreen)](https://shields.io)
+
 # how to use it?
 
 it's pretty easy
