@@ -20,8 +20,10 @@ function getArgs()
 			[[usage: lua cezar.lua args word
 			arguments:
 			-h       help; shows this
-			-d       decrypt; usage: lua cezar.lua -d decryptedword
-			-n <int> change how much is the word shifted (max 11); e.g. lua cezar.lua -n 3
+			-d       decrypt; usage: lua cezar.lua -d encryptedword
+			-n <int> change how much is the word shifted (max 11); e.g. lua cezar.lua -n 3 gaming
+
+		example: lua cezar.lua -n 6 gamer-moment
 			]])
 			os.exit()
 		elseif arg[i] == "-n" then
