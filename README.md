@@ -43,4 +43,4 @@ and to decrypt ```lua cezar.lua -n 3 -d dxjfkd```
 
 
 ## known bugs
--[ ] it may work bad with upper-case letters 
+- [ ] it may work bad with upper-case letters 
