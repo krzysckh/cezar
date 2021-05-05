@@ -6,7 +6,10 @@ howManyLetters = 1
 
 fullEN = {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'}
 
-function getArgs()
+-- ∧ creates array for the english language
+-- \/ just gets arguments in a dirty way
+
+function getArgs() 
 	if #arg == 0 then
 		print("usage: lua cezar.lua ARGUMENTS WORD")
 		return 5;
@@ -49,7 +52,7 @@ function getArgs()
 end
 
 
-cword = getArgs()
+cword = getArgs() -- sets the word to encrypt / decrypt to be the return value of getArgs()
 
 if cword == 5 then
 	os.exit()
@@ -58,7 +61,10 @@ elseif cword == 1 then
 	os.exit()
 end
 
+--∧ if the return value is not a string, exits with an error messge
 cword_ARR = {}
+
+-- ∧ create array for the word
 
 i = 1
 
@@ -67,7 +73,11 @@ while i < string.len(cword) + 1 do
 	i = i + 1
 end
 
+-- ∧ converts word to a string array
+
 i = 1
+
+-- \/ what the fuck?
 
 if shouldDECRYPT == false then
 	while i < #cword_ARR + 1 do
